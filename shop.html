@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drk Shop</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .product img{
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+        .pagination a{
+            color: orangered;
+        }
+        .pagination li:hover a{
+            cursor: pointer;
+            color: blueviolet;
+            transition: 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+       <img src="assets/imgs/logo.png" height="20px" width=" auto" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-buttons" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" >Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" >Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+              
+              <a href="account.html"><i class="fas fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- shop -->
+<section id="featured" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>Our Top Products</h3>
+      <hr class="mx-auto">
+      <p>Here You Can Find The Best Products</p>
+    </div>
+    <div class="row mx-auto container-fluid">
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop2.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">IdeaPadL340</h5>
+        <h4 class="p-price">63,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ssd1.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">SSD 512GB</h5>
+        <h4 class="p-price">4,500 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram1.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">RAM 16GB</h5>
+        <h4 class="p-price">2,400 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop1.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">IdeaPadL341</h5>
+        <h4 class="p-price">64,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+  </section>
+  <!-- Laptops -->
+  <section id="featured" class="my-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>Lattest Laptops</h3>
+      <hr class="mx-auto">
+      <p>Here You Can Check Out Our Lattest Laptops</p>
+    </div>
+    <div class="row mx-auto container-fluid">
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop3.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6" HD Laptop</h5>
+        <h4 class="p-price">36,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop4.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">HP 15s-du1116TU Pentium Silver N5030 15.6" HD Laptop</h5>
+        <h4 class="p-price">40,500 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop5.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Asus Vivobook X515MA Celeron N4020 15.6" FHD Laptop</h5>
+        <h4 class="p-price">41,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop6.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Xiaomi RedmiBook 15 Pro Core i5 11th Gen 15.6" FHD Laptop</h5>
+        <h4 class="p-price">62,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop7.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">ASUS VivoBook X515EP Core i5 11th Gen MX330 2GB Graphics 15.6" IPS FHD Laptop</h5>
+        <h4 class="p-price">74,500 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop8.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Walton Passion BX710U Core i7 10th Gen 15.6" FHD Laptop</h5>
+        <h4 class="p-price">74,550 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+  
+    </div>
+
+
+    </div>
+
+  
+    </div>
+  </section>
+
+
+  <!-- ram -->
+  <section id="featured" class="my-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>Computer RAM</h3>
+      <hr class="mx-auto">
+      <p>Here You Can Check Out Our best seles RAM</p>
+    </div>
+    <div class="row mx-auto container-fluid">
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram2.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">ADATA XPG Flame 8GB DDR4 2666MHz Laptop RAM</h5>
+        <h4 class="p-price">Out Of Stock</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram3.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Transcend 4GB DDR4 2666MHz Bus SO-DIMM Laptop RAM</h5>
+        <h4 class="p-price">2150 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram4.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Apacer Panther Golden 4GB DDR4 2666MHZ Desktop RAM</h5>
+        <h4 class="p-price">2300 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram5.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">PNY XLR8 8GB DDR4 3200MHz Desktop Gaming RAM</h5>
+        <h4 class="p-price"> 3100 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram3.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Transcend 4GB DDR4 2666MHz Bus SO-DIMM Laptop RAM</h5>
+        <h4 class="p-price">2150 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/ram3.png" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Transcend 4GB DDR4 2666MHz Bus SO-DIMM Laptop RAM</h5>
+        <h4 class="p-price">2150 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+
+    </div>
+    </section>
+
+    <!-- SSD -->
+
+
+<section id="featured" class="my-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>Lattest Laptops</h3>
+      <hr class="mx-auto">
+      <p>Here You Can Check Out Our Lattest Laptops</p>
+    </div>
+    <div class="row mx-auto container-fluid">
+      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/laptop3.jpg" alt="">
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6" HD Laptop</h5>
+        <h4 class="p-price">36,000 BDT</h4>
+        <button class="button button2">Buy Now</button>
+      </div>
+    </section>
+
+
+    <!-- Destop -->
+
+    <section id="featured" class="my-5">
+        <div class="container text-center mt-5 py-5">
+          <h3>Lattest Laptops</h3>
+          <hr class="mx-auto">
+          <p>Here You Can Check Out Our Lattest Laptops</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+            <img class="img-fluid mb-3" src="assets/imgs/laptop3.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6" HD Laptop</h5>
+            <h4 class="p-price">36,000 BDT</h4>
+            <button class="button button2">Buy Now</button>
+          </div>
+
+          <nav aria-label="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+          </nav>
+        </div>
+        </section>
+    
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Chittagong, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>018..</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>drkdevil106@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="assets/imgs/logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>We are provide The best Products <br> to your Affordable Prices</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved <a href="#">Drk Shop</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+  </body>
+  </html>
